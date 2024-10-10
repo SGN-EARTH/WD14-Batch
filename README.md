@@ -1,5 +1,7 @@
 # WD14-Batch
 
+![2024-10-10_233502](https://github.com/user-attachments/assets/fbc5a92d-4b74-45a8-b72c-b3e76ec3a1b9)
+
 ~~面向 ChatGPT 编程的产物。~~
 
 完全离线且本地的批量打标工具。原始项目：[Ketengan-Diffusion/wdv3-batch-vit-tagger](https://github.com/Ketengan-Diffusion/wdv3-batch-vit-tagger)
