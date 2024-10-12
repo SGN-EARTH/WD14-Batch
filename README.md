@@ -27,6 +27,12 @@
 │  run2.bat
 ```
 
+## 安装
+
+`requirements.txt` 使用 `pip freeze >> requirements.txt` 生成，所有包依赖指定了版本。
+
+[安装参考](https://github.com/SGN-EARTH/JoyCaption-Pre-Alpha-Batch?tab=readme-ov-file#%E5%AE%89%E8%A3%85)，不用安装 torch 。或者按常规的 venv 虚拟环境或 conda 折腾。
+
 ## 获取模型
 
 打开大佬[主页](https://huggingface.co/SmilingWolf)，选一个模型。
@@ -39,12 +45,6 @@
 # model.onnx 和 selected_tags.csv 一共 1.17 GB 。拉取会获取多余的文件，三四G左右。
 git clone https://huggingface.co/SmilingWolf/wd-eva02-large-tagger-v3
 ```
-
-## 安装
-
-`requirements.txt` 使用 `pip freeze >> requirements.txt` 生成，所有包依赖指定了版本。
-
-[安装参考](https://github.com/SGN-EARTH/JoyCaption-Pre-Alpha-Batch?tab=readme-ov-file#%E5%AE%89%E8%A3%85)，不用安装 torch 。或者按常规的 venv 虚拟环境或 conda 折腾。
 
 ## 使用
 
