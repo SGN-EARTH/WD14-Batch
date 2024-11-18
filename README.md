@@ -70,4 +70,5 @@ MODEL_DIR = "wd-eva02-large-tagger-v3"
 MODEL_DIR = "wd-vit-tagger-v3"
 ...
 ```
-
+---
+addtxt.py：遍历特定目录下的 txt 文件，在文件开头写入指定文本。一般是打标后添加召唤词用。
