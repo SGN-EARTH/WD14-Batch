@@ -56,4 +56,6 @@ set PIP_TIMEOUT=10
 :: 更详细的调试信息
 :: set PIP_VERBOSE=1
 
-cmd /k python caption.py input --character_tags_first --general_thresh 0.35 --character_thresh 0.85 --hide_rating_tags
+:: python caption.py --character_tags_first --general_thresh 0.35 --character_thresh 0.85 --hide_rating_tags
+
+cmd /k python caption2.py input --character_tags_first --general_thresh 0.25 --character_thresh 0.85 --hide_rating_tags --include_subdirectories --use_gpu
