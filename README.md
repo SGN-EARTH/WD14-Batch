@@ -29,7 +29,9 @@
 
 ## 安装
 
-`requirements.txt` 使用 `pip freeze >> requirements.txt` 生成，所有包依赖指定了版本。
+先试试 `requirements.txt` ，不行再试试 `requirements-version.txt`
+
+`requirements-version.txt` 使用 `pip freeze >> requirements-version.txt` 生成，所有包依赖指定了版本。
 
 [安装参考](https://github.com/SGN-EARTH/JoyCaption-Pre-Alpha-Batch?tab=readme-ov-file#%E5%AE%89%E8%A3%85)，不用安装 torch 。或者按常规的 venv 虚拟环境或 conda 折腾。
 
@@ -48,9 +50,11 @@ git clone https://huggingface.co/SmilingWolf/wd-eva02-large-tagger-v3
 
 ## 使用
 
-把图片丢 input 目录中，运行 run2.bat 。
+```
+python caption2.py input --character_tags_first --general_thresh 0.25 --character_thresh 0.85 --hide_rating_tags --include_subdirectories --use_gpu
+```
 
-或者运行 run.bat 后执行 python caption.py -h 查看帮助。
+或者运行 python caption2.py -h 查看帮助。
 
 > 以下仅供参考。不同的图片处理时间差异很小。
 >
@@ -59,6 +63,8 @@ git clone https://huggingface.co/SmilingWolf/wd-eva02-large-tagger-v3
 > 牙膏厂 i5-9400F 系统自带壁纸会跑满 CPU ，每张图耗时接近三秒。
 >
 > 牙膏厂 i7-10750H 人物图最高百分之七十五，耗时四五秒。
+>
+> 安装 `onnxruntime-gpu` 后使用 caption2.py ，大概零点一二秒
 
 ## 自定义
 
